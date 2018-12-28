@@ -54,7 +54,9 @@ ROOT_URLCONF = 'exams_python.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            'exams/templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
