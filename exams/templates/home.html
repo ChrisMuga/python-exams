@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block content %}
+<style>
+    .center{margin-top: 33.3333vh;}
+    .form-control{margin-top: 10px;}
+    .form-inline button{margin-right: 10px; width: 30%;}
+</style>
+<div class="row d-flex justify-content-center mt-1">
+    <div class="col-md-8 center">
+        <div class="alert alert-success">Home</div>
+        <form action="" method="post">
+            <input type="email"     class="form-control" placeholder="Email Address"    required/>
+            <input type="password"  class="form-control" placeholder="Password"         required/> 
+            <!-- buttons -->
+            <div class="form-inline">
+                <button type="submit"   class="btn btn-success      form-control" >Enter</button>
+                <button type="reset"    class="btn btn-secondary    form-control" >Clear</button>
+            </div>
+            <!-- buttons -->
+        </form>
+    </div>
+</div>
+
+{% endblock %}
