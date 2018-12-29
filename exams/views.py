@@ -5,8 +5,8 @@ from django.http import HttpResponse
 
 #home
 def home(request):
-    return render(request,'home.html')
+    return render(request,'home.html', {'title':'Home'})
 
 #register
 def register(request):
-    return render(request, 'register.html')
+    return render(request, 'register.html', {'title': 'Register'})
