@@ -10,3 +10,7 @@ def home(request):
 #register
 def register(request):
     return render(request, 'register.html', {'title': 'Register'})
+
+#new-user
+def new_user(request):
+    return HttpResponse(request.POST)

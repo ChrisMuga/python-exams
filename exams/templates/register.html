@@ -13,13 +13,14 @@
 <div class="row d-flex justify-content-center mt-1">
     <div class="col-md-8 center">
         <div class="alert alert-success">{{title}}</div>
-        <form action="" method="post">
+        <form action="new-user/" method="post">
+            {% csrf_token %}
             <div class="row">
                 <div class="col-md-6">
                     <input type="text"  class="form-control"    name="first_name"   placeholder="First Name" required/>
                 </div>
                 <div class="col-md-6">
-                    <input type="text"  class="form-control"    name="first_name"   placeholder="Last Name" required/>
+                    <input type="text"  class="form-control"    name="last_name"    placeholder="Last Name" required/>
                 </div>
             </div>
             <input type="email"     class="form-control"    name="email_address"    placeholder="Email Address"     required/>
